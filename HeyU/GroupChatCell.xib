@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark Simonson - Proxima Nova Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="groupchatcell" rowHeight="55" id="TWu-Us-e6G" customClass="GroupChatCell" customModule="HeyU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TWu-Us-e6G" id="tGs-WX-Ml9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="bMu-2K-J6N">
+                        <rect key="frame" x="303" y="3" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Aal-lQ-L3i"/>
+                            <constraint firstAttribute="width" constant="15" id="Dyq-4O-GXV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatArrowR.png" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-uY-etd">
+                        <rect key="frame" x="2" y="3" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="LKg-ei-9HX"/>
+                            <constraint firstAttribute="height" constant="15" id="VhS-wv-AYN"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQP-uw-2PZ">
+                        <rect key="frame" x="13" y="4" width="294" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh7-Io-rzP">
+                                <rect key="frame" x="8" y="22" width="278" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3I-b2-DyA">
+                                <rect key="frame" x="8" y="1" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2r1-yb-d2i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.10980392160000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.10980392160000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="2Pc-Dc-Vdp"/>
+                            <constraint firstItem="q3I-b2-DyA" firstAttribute="leading" secondItem="PQP-uw-2PZ" secondAttribute="leading" constant="8" id="77e-gP-ESz"/>
+                            <constraint firstItem="fh7-Io-rzP" firstAttribute="top" secondItem="q3I-b2-DyA" secondAttribute="bottom" id="NW1-0B-fVa"/>
+                            <constraint firstAttribute="trailing" secondItem="fh7-Io-rzP" secondAttribute="trailing" constant="8" id="QGD-Yh-Rxy"/>
+                            <constraint firstItem="q3I-b2-DyA" firstAttribute="top" secondItem="PQP-uw-2PZ" secondAttribute="top" constant="1" id="fCK-Tn-ROR"/>
+                            <constraint firstAttribute="trailing" secondItem="q3I-b2-DyA" secondAttribute="trailing" constant="8" id="inb-YH-k8P"/>
+                            <constraint firstItem="fh7-Io-rzP" firstAttribute="leading" secondItem="PQP-uw-2PZ" secondAttribute="leading" constant="8" id="vtS-90-ANG"/>
+                            <constraint firstAttribute="bottom" secondItem="fh7-Io-rzP" secondAttribute="bottom" constant="1" id="wky-55-sed"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="sFi-uY-etd" firstAttribute="top" secondItem="tGs-WX-Ml9" secondAttribute="top" constant="3" id="DkU-vs-z12"/>
+                    <constraint firstItem="fh7-Io-rzP" firstAttribute="leading" secondItem="sFi-uY-etd" secondAttribute="trailing" constant="4" id="F7d-ss-sVb"/>
+                    <constraint firstItem="bMu-2K-J6N" firstAttribute="top" secondItem="tGs-WX-Ml9" secondAttribute="top" constant="3" id="KfX-I6-MHv"/>
+                    <constraint firstItem="bMu-2K-J6N" firstAttribute="leading" secondItem="PQP-uw-2PZ" secondAttribute="trailing" constant="-4" id="N6r-EM-js2"/>
+                    <constraint firstAttribute="trailing" secondItem="PQP-uw-2PZ" secondAttribute="trailing" constant="13" id="Qfk-G5-fiu"/>
+                    <constraint firstItem="PQP-uw-2PZ" firstAttribute="top" secondItem="tGs-WX-Ml9" secondAttribute="top" constant="4" id="fi2-LP-zYz"/>
+                    <constraint firstItem="PQP-uw-2PZ" firstAttribute="leading" secondItem="tGs-WX-Ml9" secondAttribute="leadingMargin" constant="5" id="nBT-0L-fxS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="chatArrowRec" destination="bMu-2K-J6N" id="tTK-Tc-pxS"/>
+                <outlet property="chatArrowSend" destination="sFi-uY-etd" id="I9t-jS-wRx"/>
+                <outlet property="grayChatCellView" destination="PQP-uw-2PZ" id="Jae-Jm-chQ"/>
+                <outlet property="grayViewHeight" destination="2Pc-Dc-Vdp" id="15Q-pA-8Up"/>
+                <outlet property="lead" destination="nBT-0L-fxS" id="LC0-jP-iiu"/>
+                <outlet property="message" destination="fh7-Io-rzP" id="wIk-xT-FBv"/>
+                <outlet property="messageTop" destination="NW1-0B-fVa" id="4IV-Pb-SMR"/>
+                <outlet property="senderName" destination="q3I-b2-DyA" id="QY7-J1-sB4"/>
+                <outlet property="trail" destination="Qfk-G5-fiu" id="JKB-2u-rga"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="-82.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChatArrow.png" width="32" height="32"/>
+        <image name="ChatArrowR.png" width="32" height="32"/>
+    </resources>
+</document>
